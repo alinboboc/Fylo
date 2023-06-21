@@ -1,0 +1,174 @@
+:root {
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+  --gradientStart: hsl(6, 100%, 80%);
+  --gradientEnd: hsl(335, 100%, 65%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: Raleway;
+  height: 100vh;
+  width: 100%;
+  background: url(images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fyloElement {
+  position: relative;
+  background-color: var(--darkBlue);
+  margin: 1.5rem;
+  padding: 5rem;
+}
+
+.fyloElementOne {
+  border-radius: 10px 100px 10px 10px;
+}
+
+.fyloElementTwo {
+  padding-top: 20px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.fyloButtons {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fyloButtons img {
+  width: 24px;
+}
+
+.fyloButtons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  height: 50px;
+  width: 50px;
+  background-color: var(--veryDarkBlue);
+  border-radius: 10px;
+}
+
+.spaceUsed {
+  color: var(--paleBlue);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rangeBackground {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  height: 20px;
+  background: var(--veryDarkBlue);
+}
+
+.rangeGradient {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 15px;
+  background: linear-gradient(90deg, var(--gradientStart), var(--gradientEnd));
+  border-radius: 10px;
+  width: 80%;
+}
+
+.rangeButton {
+  margin-right: 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.left {
+  position: absolute;
+  right: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: #fff;
+  height: 70px;
+  width: 180px;
+}
+
+.size {
+  font-size: 4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100vw;
+    background-color: var(--veryDarkBlue);
+  }
+
+  .fyloElements {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fyloElementOne {
+    width: 300px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .fyloButtons a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .fyloButtons img {
+    width: 30px;
+  }
+
+  .fyloElementTwo {
+    width: 600px;
+  }
+
+  .spaceUsed {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .left {
+    top: -60px;
+    height: 100px;
+    width: 210px;
+    font-size: 2rem;
+  }
+
+  .size {
+    font-size: 5rem;
+  }
+}
